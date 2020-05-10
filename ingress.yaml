@@ -1,0 +1,8 @@
+ingress:
+  hosts:
+    - host: backend-app.k8s.com
+      paths: 
+        - path: /
+          backend:
+            serviceName: backend-app
+            servicePort: 8080

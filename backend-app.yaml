@@ -1,0 +1,11 @@
+
+app:
+  name: backend-app
+  group: backend
+  container:
+    image: faisalbasha82/backend-app:latest
+    config:
+      - name: postgres-config
+    env: 
+      - key: DB_SERVER
+        value: localhost
